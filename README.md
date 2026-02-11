@@ -93,11 +93,11 @@ Contributions to this News App are welcome! If you find any issues or have sugge
 
 ## 📄 License
 
-This News App is licensed under the MIT License. Feel free to use, modify, and distribute the code as per the terms of the license.
+This News App is licensed under the [MIT License](https://opensource.org/license/mit). Feel free to use, modify, and distribute the code as per the terms of the license.
 
 
 ## 📄Acknowledgements
-This app utilizes the NewsAPI.org public API for fetching news articles. Visit their website for more information: [NewsAPI.org]
+This app utilizes the NewsAPI.org public API for fetching news articles. Visit their website for more information:  [newsapi.org](https://newsapi.org)
 
 
 ---
