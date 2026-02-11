@@ -5,6 +5,7 @@ import './NavBar.css';
 const NavBar = ({ onSearch, searchQuery, setSearchQuery, activeView, setActiveView }) => {
   const [showSuggestions, setShowSuggestions] = useState(false);
   const [filteredSuggestions, setFilteredSuggestions] = useState([]);
+  const [expanded, setExpanded] = useState(false);
   const searchRef = useRef(null);
 
   // Popular search suggestions organized by category
@@ -84,6 +85,7 @@ const NavBar = ({ onSearch, searchQuery, setSearchQuery, activeView, setActiveVi
   const handleNavClick = (view) => {
     setActiveView(view);
     setShowSuggestions(false);
+    setExpanded(false);
   };
 
   // Group suggestions by category for display
@@ -96,35 +98,39 @@ const NavBar = ({ onSearch, searchQuery, setSearchQuery, activeView, setActiveVi
   }, {});
 
   return (
-    <Navbar expand="lg" className="navbar-custom sticky-top">
+    <Navbar expand="lg" className="navbar-custom sticky-top" expanded={expanded}>
       <Container fluid className="px-4">
-        <Navbar.Brand href="#" className="brand-logo" onClick={() => handleNavClick('home')}>
+        <Navbar.Brand href="#" className="brand-logo" onClick={(e) => { e.preventDefault(); handleNavClick('home'); }}>
           <span className="logo-icon">📰</span>
           <span className="gradient-text brand-text">NewsHub</span>
         </Navbar.Brand>
 
-        <Navbar.Toggle aria-controls="navbar-nav" className="border-0" />
+        <Navbar.Toggle
+          aria-controls="navbar-nav"
+          className="border-0"
+          onClick={() => setExpanded(!expanded)}
+        />
 
         <Navbar.Collapse id="navbar-nav">
           <Nav className="ms-auto me-3 align-items-center">
             <Nav.Link
               href="#"
               className={`nav-link-custom ${activeView === 'home' ? 'active' : ''}`}
-              onClick={() => handleNavClick('home')}
+              onClick={(e) => { e.preventDefault(); handleNavClick('home'); }}
             >
               Home
             </Nav.Link>
             <Nav.Link
               href="#"
               className={`nav-link-custom ${activeView === 'trending' ? 'active' : ''}`}
-              onClick={() => handleNavClick('trending')}
+              onClick={(e) => { e.preventDefault(); handleNavClick('trending'); }}
             >
               Trending
             </Nav.Link>
             <Nav.Link
               href="#"
               className={`nav-link-custom ${activeView === 'saved' ? 'active' : ''}`}
-              onClick={() => handleNavClick('saved')}
+              onClick={(e) => { e.preventDefault(); handleNavClick('saved'); }}
             >
               Saved
             </Nav.Link>
