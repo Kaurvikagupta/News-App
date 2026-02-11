@@ -28,7 +28,7 @@ A beautiful, responsive news application built with **React.js** and **Bootstrap
 
 1. **Clone the repository**:
 ```bash
-git clone https://github.com/YOUR_USERNAME/news-mag.git
+https://github.com/Kaurvikagupta/News-App.git
 cd news-mag
 ```
 
@@ -88,10 +88,18 @@ This project prioritizes **Visual Excellence** and **User Engagement**:
 - The app includes a **Demo Mode**. If no API key is provided, it will automatically switch to high-quality mock data so the app remains fully functional for demonstration.
 - **Saved Articles**: Uses browsers' `localStorage`. Articles you bookmark will remain saved even after closing the browser.
 
+## 📄Contributing
+Contributions to this News App are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request in this repository.
+
 ## 📄 License
 
-This project is open source and available under the MIT License.
+This News App is licensed under the [MIT License](https://opensource.org/license/mit). Feel free to use, modify, and distribute the code as per the terms of the license.
+
+
+## 📄Acknowledgements
+This app utilizes the NewsAPI.org public API for fetching news articles. Visit their website for more information:  [newsapi.org](https://newsapi.org)
+
 
 ---
 
-**Built by Antigravity AI | Inspired by Modern News Portals** 📰✨
+
