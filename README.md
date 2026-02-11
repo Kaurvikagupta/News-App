@@ -97,7 +97,7 @@ This News App is licensed under the MIT License. Feel free to use, modify, and d
 
 
 ## 📄Acknowledgements
-This app utilizes the NewsAPI.org public API for fetching news articles. Visit their website for more information: @NewsAPI.org  
+This app utilizes the NewsAPI.org public API for fetching news articles. Visit their website for more information: [NewsAPI.org]
 
 
 ---
